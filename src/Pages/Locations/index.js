@@ -39,7 +39,7 @@ const Locations = () => {
               );
             })
           ) : (
-            <h1>Carregando</h1>
+            <h1>Something unexpected happened :/</h1>
           )}
         </div>
       </div>

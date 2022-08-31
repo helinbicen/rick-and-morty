@@ -71,7 +71,7 @@ useEffect(() => {
               );
             })
           ) : (
-            <h1>Olmadı</h1>
+            <h1>There is no one living here.</h1>
           )}
         </div>
       </div>
