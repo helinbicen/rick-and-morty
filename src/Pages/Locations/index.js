@@ -2,7 +2,7 @@ import { api } from "../../Services/api";
 import styles from "./index.module.css";
 import { useState, useEffect } from "react";
 
-import LocationCard from "../LocationCard";
+import LocationCard from "../../Components/LocationCard"
 import RickAndMorty from "../../Assets/RickAndMorty.jpg"
 
 const Locations = () => {
