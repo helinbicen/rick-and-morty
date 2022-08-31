@@ -23,8 +23,8 @@
 }
 
 .card:hover {
-    transform: scale(1.2);
-    opacity: 1;
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 li {
@@ -38,6 +38,11 @@ li {
   gap: 1.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .cardHeader {
   display: flex;
   align-items: center;
@@ -48,7 +53,7 @@ li {
 }
 
 .locationName {
-  color: #93EB2E;
+  color: #93eb2e;
   font-size: 2rem;
   font-weight: bold;
   display: flex;

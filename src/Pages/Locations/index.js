@@ -12,7 +12,6 @@ const Locations = () => {
     async function getData() {
       const response = await api.get(`location`);
       const result = await response.data.results;
-      const pages = await response.data.info.pages;
       setContent(result);
     }
     getData();
@@ -28,12 +27,14 @@ const Locations = () => {
             content.map((card) => {
               return (
                 <LocationCard
-                  key={card.id}
-                  id={card.id}
-                  name={card.name}
-                  type={card.type}
-                  dimension={card.dimension}
-                  residents={card.residents.length}
+                  key={card?.id}
+                  id={card?.id}
+                  name={card?.name}
+                  type={card?.type}
+                  dimension={card?.dimension}
+                  residentsCount={card?.residents.length}
+                  residents={card?.residents}
+                 
                 />
               );
             })

@@ -1,8 +1,21 @@
 import styles from "./index.module.css";
 
-const LocationCard = ({ id, image, residents, name, type, dimension }) => {
+import {Link} from "react-router-dom"
+
+
+const LocationCard = ({
+  id,
+  residents,
+  residentsCount,
+  name,
+  type,
+  dimension,
+}) => {
+
   return (
-    <div className={styles.cardContainer}>
+    <Link to={`/location/${id}`} >
+
+       <div className={styles.cardContainer}>
       <div className={styles.card}>
         <li key={id}>
           <div className={styles.cardHeader}>
@@ -16,12 +29,14 @@ const LocationCard = ({ id, image, residents, name, type, dimension }) => {
               <b>Dimension:</b> {dimension}
             </p>
             <p className={styles.info}>
-              <b>Residents:</b> {residents}
+              <b>Residents:</b> {residentsCount}
             </p>
           </div>
         </li>
       </div>
     </div>
+    </Link>
+   
   );
 };
 
