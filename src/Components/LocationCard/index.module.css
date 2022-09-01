@@ -7,6 +7,7 @@
   /* width: 360px;
   height: 360px; */
   margin-bottom: 2rem;
+  height: 100%;
   /* background-color: blue; */
 }
 
@@ -14,19 +15,22 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 400px;
+  height: 100%;
   padding: 1rem;
   border: 1px solid #e7e8ea;
   border-radius: 24px;
   margin: auto;
   background-color: #000;
   gap: 1rem;
+  transition: 0.4s;
 }
 
 .card:hover {
   transform: scale(1.05);
-  transition: 0.4s ease-in-out;
+
+  transition-timing-function: ease-in-out;
 }
 
 li {
@@ -43,6 +47,7 @@ li {
 a {
   text-decoration: none;
   color: white;
+  height: 300px;
 }
 
 .cardHeader {
@@ -86,4 +91,14 @@ a {
 .info > b {
   color: #00a7eb;
   font-weight: bold;
+}
+
+
+@media screen and (max-width: 576px) {
+  .card {
+    max-width: 90%;
+    max-height: 90%;
+    gap: 0.1rem;
+  }
+  
 }

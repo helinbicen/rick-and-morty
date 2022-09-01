@@ -13,6 +13,7 @@ export default function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
+        <Route index element={<Locations />} />
           <Route path="home" element={<Locations />} />
           <Route path="location/:id" element={<Residents />} />
       

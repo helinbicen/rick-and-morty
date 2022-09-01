@@ -4,6 +4,7 @@ import Locations from "../Locations";
 const Layout = () => {
   return (
     <>
+  
       <Outlet />
     </>
   );

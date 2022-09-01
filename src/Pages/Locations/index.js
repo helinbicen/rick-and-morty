@@ -20,7 +20,10 @@ const Locations = () => {
   return (
     <div className={styles.locations}>
       <div className={styles.location}>
-        <img src={RickAndMorty}  alt="" className={styles.RickandMorty}/>
+        <a href="/">
+            <img src={RickAndMorty}  alt="" className={styles.RickandMorty}/>
+        </a>
+      
         <h1 className={styles.header}>LOCATIONS </h1>
         <div className={styles.container}>
           {content ? (
