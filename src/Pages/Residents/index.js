@@ -70,7 +70,9 @@ const Residents = () => {
 
         <h1 className={styles.header}>RESIDENTS </h1>
         <div className={styles.container}>
-          {content.length > 0 && !loading
+
+
+          {content.length!==0 ? content.length > 0 && !loading
             ? content?.map((characterCard) => {
                 return (
                   <ResidentCard
@@ -86,7 +88,8 @@ const Residents = () => {
                   />
                 );
               })
-            : [1, 2, 3, 4].map(() => <ResidentCardPlaceHolder />)}
+            : [1, 2, 3, 4].map(() => <ResidentCardPlaceHolder />) :
+            (<h1>There is no one living here :/</h1>)}
         </div>
       </div>
     </div>
